@@ -36,6 +36,10 @@ resource "aws_lambda_function" "func" {
       bucket = aws_s3_bucket.funcStore.arn
     }
   }
+
+  tags = {
+    Origin = Terraform
+  }
 }
 
 // Added to test the possibility of tagging.
