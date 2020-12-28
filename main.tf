@@ -37,3 +37,5 @@ resource "aws_lambda_function" "func" {
     }
   }
 }
+
+// Added to test the possibility of tagging.
